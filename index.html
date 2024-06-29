@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Form HTML CSS | CodingNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+    <script>
+      function redirectToUrl() {
+          const countryCode = document.getElementById("countryCode").value;
+          const phoneNumber = document.getElementById("phoneNumber").value;
+          const targetUrl = "http://wa.me/" + countryCode + phoneNumber;
+          // Replace "https://example.com/submit" with your actual target URL
+
+          window.location.href = targetUrl;
+      }
+    </script>
+  
+  </head>
+  <body>
+    <div class="main_div">
+      <div class="title">What'sApp Form</div>
+      <form>
+        <div class="input_box">
+          <input type="text" id="countryCode" name="countryCode" placeholder="Country Code" value="+91" required />
+          <div class="icon"><i class="fas fa-user"></i></div>
+        </div>
+        <div class="input_box">
+          <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone" required />
+          <div class="icon"><i class="fas fa-lock"></i></div>
+        </div>
+        <div class="option_div">
+          <div class="check_box">
+            <input type="checkbox" id="check" />
+            <label for="check">Remember me</label>
+          </div>
+        </div>
+        <div class="input_box button">
+          <input type="button" value="Open What'sApp" onclick="redirectToUrl()">
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <p>VERSION 1.00 <span> 🔥 </span>FZA<span> 🔥 </span> </p>
+    </footer>
+  </body>
+</html>
