@@ -140,3 +140,6 @@ form a {
 form a:hover {
   text-decoration: underline;
 }
+footer { 
+  color: #26ff00;
+}
